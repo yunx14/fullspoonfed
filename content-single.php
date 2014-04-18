@@ -13,6 +13,7 @@
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
+			<?php the_post_thumbnail('large'); ?>
 			<?php the_content(); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'leaf' ), 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->
