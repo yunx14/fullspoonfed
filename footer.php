@@ -38,7 +38,7 @@
 				<div class="four columns aboutfooter">
 					<h1>About Full Spoon Fed</h1>
 					<p>Full Spoon Fed is a Blog dedicated to pomoting healthy food choice lifestyles. We are a branch of Whole Foods Market’s Full Spoon wellness initiative dedicated to promoting healthy eating in the workplace.</p>
-					<a href="/about">Learn more about us.</a>
+					<a href="/fullspoonfed/?page_id=39">Learn more about us.</a>
 				</div><!-- .copyright .six .columns -->
 
 				<div class="four columns followfooter">

@@ -54,8 +54,8 @@
 					<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'leaf' ); ?>"><?php _e( 'Skip to content', 'leaf' ); ?></a></div>
 					<div class="sf-menu">
 						<ul class="sf-menu sf-js-enabled">
-							<li class="current_page_item"><a href="/">Home</a></li>
-							<li class="current_page_item"><a href="/">About Us</a></li>
+							<li class="current_page_item"><a href="/fullspoonfed">Home</a></li>
+							<li class="current_page_item"><a href="/fullspoonfed">About Us</a></li>
 							<li class="page_item page-item-2"><a href="http://fullspoon.com" target="_blank">Go to Full Spoon</a></li>
 							<!-- <li class="page_item page-item-2"><a href="/">Recipes</a></li> -->
 						</ul>
@@ -71,7 +71,7 @@
 			<header id="masthead" class="site-header row twelve columns" role="banner">
 				<div class="row">
 					<div class="header-group six columns">
-						<a href="/"><img src="<?= bloginfo('template_url') ?>/images/logo.png"/></a>
+						<a href="/fullspoonfed"><img src="<?= bloginfo('template_url') ?>/images/logo.png"/></a>
 					</div><!-- .header-group .six .columns -->
 					
 						<?php leaf_header_inside(); // Inside Header hook. ?>
@@ -87,8 +87,8 @@
 					<div class="sf-menu">
 						<ul class="sf-menu sf-js-enabled">
 							<!-- current_page_item -->
-							<li class="page_item"><a href="/">Home</a></li>
-							<li class="page_item"><a href="/about">About Us</a></li>
+							<li class="page_item"><a href="/fullspoonfed">Home</a></li>
+							<li class="page_item"><a href="/fullspoonfed/?page_id=39">About Us</a></li>
 							<li class="page_item"><a href="http://fullspoon.com" target="_blank">Go to Full Spoon</a></li>
 							<!-- <li class="page_item page-item-2"><a href="/">Recipes</a></li> -->
 						</ul>
