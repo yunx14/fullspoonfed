@@ -14,7 +14,7 @@ $no_duplicates = array(); ?>
 		<div id="content" role="main">
 			<article class="post-home">
 
-				<?php /********* Slider Section. *********/ ?>
+				<?php /********* Slider Section. ********?>
 				
 				<div id="iview">
 				
@@ -41,8 +41,36 @@ $no_duplicates = array(); ?>
 					
 				</div><!-- #iview -->
 				
+				<?php */ ?>
 				
 				<?php /********* Featured Section. *********/ ?>
+
+				<div id="home-featured">
+
+					<?php $loop = new WP_Query( 'cat=133' ); ?>
+
+					<?php if ( $loop->have_posts() ) : ?>
+
+					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark"><?php the_post_thumbnail('large'); ?></a>
+
+						<h2 class="entry-title">
+							<?php the_title(); ?>
+						</h2>
+
+						<div class="entry-summary">
+							<?php echo '<p>' . wp_trim_words( get_the_excerpt(), 35, null ) . '</p>';?>
+						</div><!-- .entry-summary -->
+
+						<p class="read-more-link"><a href="<?php the_permalink(); ?>"><?php _e( 'Full Article', 'leaf'  ); ?> &rarr;</a></p>
+						
+
+					<?php endwhile; ?>
+
+					<?php endif; ?>
+
+				</div>
 				
 				
 				
